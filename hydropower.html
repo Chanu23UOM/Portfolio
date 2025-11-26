@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Hydropower Plant - Chanupa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .project-hero {
+            padding: 120px 0 60px;
+            background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
+            position: relative;
+        }
+
+        .project-hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            gap: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .project-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .meta-item i {
+            color: var(--primary-color);
+        }
+
+        .project-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-width: 800px;
+        }
+
+        .model-container {
+            background: var(--accent-bg);
+            padding: 3rem 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .model-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .model-frame {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 255, 136, 0.2);
+            border: 1px solid var(--border-color);
+            background: var(--primary-bg);
+        }
+
+        .model-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .details-section {
+            padding: 80px 0;
+            background: var(--secondary-bg);
+        }
+
+        .details-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .detail-card {
+            background: var(--accent-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .detail-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
+        }
+
+        .detail-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .detail-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .tech-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .tech-badge {
+            background: var(--primary-color);
+            color: var(--primary-bg);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .project-title {
+                font-size: 2rem;
+            }
+
+            .model-container {
+                padding: 2rem 0;
+            }
+
+            .details-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <span class="logo-text">Chanupa</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <a href="index.html#projects" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Projects
+            </a>
+            <h1 class="project-title">3D Hydropower Plant</h1>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-tags"></i>
+                    <span>3D Modeling</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Renewable Energy</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-industry"></i>
+                    <span>Power Systems</span>
+                </div>
+            </div>
+            <p class="project-description">
+                Explore an interactive 3D visualization of a complete hydropower plant system. This immersive model showcases the complex infrastructure of hydropower generation, including turbines, generators, control systems, and the complete flow of water through the facility. Navigate around the plant to understand how renewable energy is harnessed from water flow.
+            </p>
+        </div>
+    </section>
+
+    <section class="model-container">
+        <div class="model-wrapper">
+            <div class="model-frame">
+                <iframe src="https://3d.energyencyclopedia.com/hydropower-plant?mode=iframe" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="details-section">
+        <div class="details-container">
+            <h2 class="section-title">Project Details</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3><i class="fas fa-water"></i> Power Generation</h3>
+                    <p>Hydropower plants convert the kinetic energy of flowing water into electrical energy using turbines and generators. This clean, renewable energy source is one of the most efficient forms of power generation.</p>
+                </div>
+                <div class="detail-card">
+                    <h3><i class="fas fa-cogs"></i> System Components</h3>
+                    <p>The model includes all major components: dam structures, penstocks, turbines, generators, transformers, and control systems, demonstrating the complete power generation process.</p>
+                </div>
+                <div class="detail-card">
+                    <h3><i class="fas fa-leaf"></i> Environmental Impact</h3>
+                    <p>Hydropower is a clean energy source with no direct emissions. This interactive model helps visualize how water flow is harnessed to produce sustainable electricity.</p>
+                </div>
+                <div class="detail-card">
+                    <h3><i class="fas fa-chart-line"></i> Efficiency & Capacity</h3>
+                    <p>Modern hydropower plants can achieve efficiency rates of over 90%, making them one of the most efficient energy conversion systems available today.</p>
+                </div>
+                <div class="detail-card">
+                    <h3><i class="fas fa-eye"></i> Interactive Learning</h3>
+                    <p>This 3D model allows you to explore all aspects of the hydropower plant in detail, providing an educational tool for understanding renewable energy systems.</p>
+                </div>
+                <div class="detail-card">
+                    <h3><i class="fas fa-globe"></i> Global Significance</h3>
+                    <p>Hydropower accounts for over 16% of global electricity generation, making it the largest source of renewable energy worldwide.</p>
+                </div>
+            </div>
+            <div class="tech-badges">
+                <span class="tech-badge">3D Visualization</span>
+                <span class="tech-badge">Interactive Model</span>
+                <span class="tech-badge">Renewable Energy</span>
+                <span class="tech-badge">Power Systems</span>
+                <span class="tech-badge">Engineering Education</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Chanupa. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

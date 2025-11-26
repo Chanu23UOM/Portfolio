@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanupa - Electrical Engineering Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Chanupa</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="typing-text">Hi, I'm Chanupa</span>
+                </h1>
+                <h2 class="hero-subtitle">Electrical Engineering Undergraduate</h2>
+                <p class="hero-description">
+                    Passionate about innovation in electrical systems, renewable energy, and cutting-edge technology.
+                    Currently pursuing my degree at University of Moratuwa.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#contact" class="btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="circuit-animation">
+                    <div class="node"></div>
+                    <div class="node"></div>
+                    <div class="node"></div>
+                    <div class="node"></div>
+                    <div class="connection"></div>
+                    <div class="connection"></div>
+                    <div class="connection"></div>
+                </div>
+                <div class="star-animation-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm an electrical engineering undergraduate at the University of Moratuwa, one of Sri Lanka's 
+                        premier engineering institutions. My passion lies in exploring the intersection of traditional 
+                        electrical engineering principles with modern technological innovations.
+                    </p>
+                    <p>
+                        Throughout my academic journey, I've developed a strong foundation in circuit analysis, 
+                        power systems, digital electronics, and control systems. I'm particularly interested in 
+                        renewable energy systems, automation, and embedded systems design.
+                    </p>
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>B.Sc. in Electrical Engineering</h4>
+                                <p>University of Moratuwa | In Progress</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-code"></i>
+                        <h3>15+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-award"></i>
+                        <h3>5+</h3>
+                        <p>Certifications</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <h3>10+</h3>
+                        <p>Team Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>3D Hydropower Plant Model</h3>
+                        <p>Interactive 3D visualization of a hydropower plant system, showcasing the complete infrastructure, turbines, and power generation mechanism in an immersive environment.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">3D Modeling</span>
+                            <span class="tech-tag">Renewable Energy</span>
+                            <span class="tech-tag">Power Systems</span>
+                        </div>
+                        <a href="hydropower.html" class="project-link">View 3D Model <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Solar Power Management System</h3>
+                        <p>Designed and implemented an intelligent solar power management system with MPPT controller and battery optimization.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">MPPT</span>
+                            <span class="tech-tag">IoT</span>
+                        </div>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Automated Home Security System</h3>
+                        <p>Developed a comprehensive home security system with motion detection, facial recognition, and mobile alerts.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Raspberry Pi</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Digital Signal Processing Filter</h3>
+                        <p>Implemented advanced digital filters for noise reduction in audio signals using FPGA technology.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">VHDL</span>
+                            <span class="tech-tag">FPGA</span>
+                            <span class="tech-tag">DSP</span>
+                        </div>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Stranger Things Countdown Timer</h3>
+                        <p>Interactive countdown timer for Stranger Things Season 5 Volume 1 release, featuring a dark themed design with real-time updates.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="stranger-things.html" class="project-link">View Countdown <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="events">
+        <div class="container">
+            <h2 class="section-title">Events & Countdowns</h2>
+            <div class="events-content">
+                <div class="event-featured">
+                    <div class="event-image-wrapper">
+                        <img src="wallpaper.jpg" alt="Stranger Things" class="event-background-image">
+                        <div class="event-overlay"></div>
+                        <div class="event-preview">
+                            <h3 class="event-title">STRANGER THINGS</h3>
+                            <p class="event-subtitle">SEASON 5 VOLUME 1</p>
+                            <div class="event-countdown-preview">
+                                <div class="preview-countdown-item">
+                                    <span class="preview-number" id="preview-days">0</span>
+                                    <span class="preview-label">DAYS</span>
+                                </div>
+                                <div class="preview-countdown-item">
+                                    <span class="preview-number" id="preview-hours">0</span>
+                                    <span class="preview-label">HOURS</span>
+                                </div>
+                                <div class="preview-countdown-item">
+                                    <span class="preview-number" id="preview-mins">0</span>
+                                    <span class="preview-label">MINS</span>
+                                </div>
+                                <div class="preview-countdown-item">
+                                    <span class="preview-number" id="preview-secs">0</span>
+                                    <span class="preview-label">SECS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Stranger Things Season 5 Countdown</h3>
+                        <p>An interactive countdown timer for the highly anticipated release of Stranger Things Season 5 Volume 1. Features a dark, atmospheric design with real-time countdown updates and a stunning background wallpaper.</p>
+                        <div class="event-info">
+                            <div class="event-info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Release Date: November 26, 2025</span>
+                            </div>
+                            <div class="event-info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>5:00 PM Pacific Time</span>
+                            </div>
+                            <div class="event-info-item">
+                                <i class="fas fa-code"></i>
+                                <span>HTML, CSS, JavaScript</span>
+                            </div>
+                        </div>
+                        <a href="stranger-things.html" class="btn-primary event-btn">View Full Countdown <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-bolt"></i> Electrical Engineering</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Digital Signal Processing</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Power Systems</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Control Systems</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Digital Electronics</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>C/C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MATLAB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>VHDL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Software</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>AutoCAD Electrical</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Proteus</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Arduino IDE</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Quartus Prime</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in discussing new opportunities, innovative projects, and collaborations in electrical engineering.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>chanupa@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+94 77 123 4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Moratuwa, Sri Lanka</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Chanupa. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#events">Events</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
